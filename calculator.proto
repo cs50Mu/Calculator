@@ -1,0 +1,7 @@
+message Request {
+    required string expression = 1;
+}
+
+message Response {
+    required int32 val = 1;
+}
