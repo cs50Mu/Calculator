@@ -23,7 +23,8 @@ def handle_echo(socket, address):
 def calculate(e):
     ops = []
     vals = []
-    for c in e:
+    elements = e.split(' ')
+    for c in elements:
         if c == '(':
             pass
         elif c == '+':

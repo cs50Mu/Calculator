@@ -16,7 +16,7 @@ from utils import send, receive
 class Client(object):
     def __init__(self, message):
         self.address = ('127.0.0.1', 12000)
-        self.message = message
+        self.message = message.strip()
         self.socket = socket.socket(type=socket.SOCK_STREAM)
 
     def connect(self):
